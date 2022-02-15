@@ -5,14 +5,14 @@
     box-sizing: border-box;
 }
 
-.contentLogin, .contentSignUp{
+.contentLogin{
     display: flex;
     position: relative;
     width: 100%;
     height: 100vh;
 }
 
-.containerImagen-name, .containerImagen-singup{
+.containerImagen-name{
     position: relative;
     width: 50%;
     height: 100%;
@@ -27,8 +27,7 @@
     object-fit: cover;
 }
 
-.containerImagen-name::before,
-.containerImagen-singup::before{
+.containerImagen-name::before{
     content: '';
     position: absolute;
     top: 0;
@@ -58,13 +57,13 @@
     justify-content: center;
     color: #333333;
     font-weight: 600;
-    font-size: 40px;
+    font-size: 1.5em;
     letter-spacing: 2px;
     width: 100%;
-    margin-bottom: 70px;
+    margin-bottom: 20px;
 }
 
-.formLogin, .formSignUp{
+.formLogin{
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -84,7 +83,7 @@
     background: transparent;
 }
 
-.save, .btnSignUp{
+.save{
     border-radius: 30px;
     background-color: #8BDB81;
     border: 1px solid #8BDB81;
@@ -110,41 +109,16 @@
     cursor: pointer;
 }
 
-
-/********* Second Page*******/
-.imgSingup{
+.iconEye{
     position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    object-fit: fill;
-}
-.userSignUp, .emailSignUp, .passSignUp{
-    border: 1px solid rgb(34, 33, 33);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
-    border-radius: 15px;
-    padding: 10px 20px;
-    outline: none;
-    width: 250px;
-    font-weight: 400;
-    font-size: 15px;
-    background: transparent;
-}
-.tituloSignUp{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #333333;
-    font-weight: 600;
-    font-size: 30px;
-    letter-spacing: 2px;
-    width: 100%;
-    margin-bottom: 20px;
+    right: 180px;
+    margin: 5px;
+    cursor: pointer;
+    top: 40%;
 }
 
 @media screen and (max-width: 768px) {
-    .containerImagen-name, .containerImagen-singup {
+    .containerImagen-name {
         position: absolute;
         top: 0;
         left: 0;
